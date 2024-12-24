@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    background-image: url('Images/Merry\ X\'mas\,\ Pixel\ Jeff.gif'); /* Ganti dengan URL gambar latar belakang yang diinginkan */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.card-img  {
+    display: block; /* Mengubah gambar menjadi elemen blok */
+    margin: 0 auto; /* Margin otomatis untuk menempatkan gambar di tengah */
+    width: 50%; /* Gambar akan menyesuaikan lebar card */
+    height: auto; /* Tinggi gambar akan disesuaikan secara proporsional */
+}
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: url('https://example.com/natal-decorations.png') no-repeat center;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
